@@ -23,3 +23,12 @@ void LED_init(void)
     //Pull-up/Pull-down setting
     LL_GPIO_SetPinPull(GPIOA, LL_GPIO_PIN_5, LL_GPIO_PULL_NO);
 }
+
+void LED_Blink_Fast(void)
+{
+    LL_GPIO_TogglePin(GPIOA, LL_GPIO_PIN_5); /* Toggle PA5 */
+    // or we can write the code like this:
+    //LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_5); /* Turn off PA5 */
+    //LL_GPIO_SetOutputPin(GPIOA, LL_GPIO_PIN_5);     /* Turn on PA5 */
+    for (volatile int i = 0; i < 50000; i++); /* Delay */
+}

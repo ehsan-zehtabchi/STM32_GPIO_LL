@@ -9,5 +9,8 @@
 #define INC_GPIO_LL_H_
 
 void LED_init(void);
+void LED_Blink_Fast(void);
+
+
 
 #endif /* INC_GPIO_LL_H_ */
