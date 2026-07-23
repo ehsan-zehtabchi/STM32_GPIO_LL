@@ -237,3 +237,9 @@ COM3
 
 !ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-07-23 19:36:03.996
 !MESSAGE port: COM3
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2026-07-23 20:14:28.951
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 3 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2026-07-23 20:14:28.952
+!MESSAGE Existing sessions are:

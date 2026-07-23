@@ -86,19 +86,27 @@ int main(void)
   /* Initialize all configured peripherals */
   /* USER CODE BEGIN 2 */
   LED_init();
-
+  Button_init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
+while (1)
   {
     /* USER CODE END WHILE */
-	LED_Blink_Fast();
     /* USER CODE BEGIN 3 */
+    if(Button_read() == 1)
+    {
+      LED_Blink_Fast();
+    }
+    else
+    {
+      LED_OFF();
+    }
   }
+
   /* USER CODE END 3 */
-}
+  }
 
 /**
   * @brief System Clock Configuration
